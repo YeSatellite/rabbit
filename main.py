@@ -12,8 +12,6 @@ if __name__ == "__main__":
         if o in ('-w', '--workers'):
             workers = int(a)
 
-    print(workers)
-
 
     def callback(html):
         print(html)
@@ -27,7 +25,7 @@ if __name__ == "__main__":
 
     urls = [
         f'http://mirfactov.com/page/{i}/'
-        for i in range(1, 4)
+        for i in range(1, 400)
     ]
 
     crawler.get(urls)
